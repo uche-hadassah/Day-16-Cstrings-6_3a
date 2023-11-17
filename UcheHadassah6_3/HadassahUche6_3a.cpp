@@ -13,18 +13,19 @@ int main()
 	cout << "Enter a word:";
 	cin >> word;
 	for (j = 0; word[j] != '\0'; j++);//Gets the length of the word
-	while (i < j)
+	while (i <= j-1)
 	{
-		if (word[i] != word[j])
+		if (word[i] != word[j-1])
 		{
 			cout << "This is not a palindrome";
 			break;
         }
+		if (i == j-1)
+		{
+			cout << "This is a palindrome";
+		}
 		i++;
 		j--;
 	}
-	if (i == j)
-	{
-		cout << "This is a palindrome";
-	}
+	
 }
