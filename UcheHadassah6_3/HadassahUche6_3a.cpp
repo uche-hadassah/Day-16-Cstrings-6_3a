@@ -9,11 +9,22 @@ const int MAX = 100;
 int main()
 {
 	char word[MAX];
-	int i = 0, j = 0;
+	int i = 0, j;
 	cout << "Enter a word:";
 	cin >> word;
-	while (word[i] != word[j])
+	for (j = 0; word[j] != '\0'; j++);//Gets the length of the word
+	while (i < j)
 	{
-
+		if (word[i] != word[j])
+		{
+			cout << "This is not a palindrome";
+			break;
+        }
+		i++;
+		j--;
+	}
+	if (i == j)
+	{
+		cout << "This is a palindrome";
 	}
 }
