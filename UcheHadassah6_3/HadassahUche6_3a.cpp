@@ -27,5 +27,8 @@ int main()
 		i++;
 		j--;
 	}
-	
+	if (i > j - 1)
+	{
+		cout << "This is a palindrome";
+	}
 }
