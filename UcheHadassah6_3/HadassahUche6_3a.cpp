@@ -12,6 +12,7 @@ int main()
 	int i = 0, j;
 	cout << "Enter a word:";
 	cin >> word;
+	//I will add a condition to take a word not a string
 	for (j = 0; word[j] != '\0'; j++);//Gets the length of the word
 	while (i <= j-1)
 	{
